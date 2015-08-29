@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="graphagenic.com.mycanvas"
+    android:versionCode="11"
+    android:versionName="11" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".ui.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.FaceAlbumsActivity"
+            android:label="FacePhotosActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.InstaPhotosActivity"
+            android:label="InstaPhotosActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.FacePhotosActivity"
+            android:label="FacePhotosActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.PickType"
+            android:label="PickSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.PickSizeActivity"
+            android:label="PickSizeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.HomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+        <activity
+            android:name=".ui.Preview"
+            android:label="@string/title_activity_preview" >
+        </activity>
+        <activity
+            android:name=".ui.Details"
+            android:label="@string/title_activity_details" >
+        </activity>
+        <activity
+            android:name=".ui.RotateActivity"
+            android:label="@string/title_activity_rotate" >
+        </activity>
+        <activity
+            android:name=".ui.DoneActivity"
+            android:label="@string/title_activity_done" >
+        </activity>
+    </application>
+
+</manifest>

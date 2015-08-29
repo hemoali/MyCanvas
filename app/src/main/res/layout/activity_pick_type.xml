@@ -1,0 +1,62 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:weightSum="100"
+    android:orientation="vertical">
+
+    <ImageView android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="40" android:layout_margin="30dp" android:src="@drawable/wrap"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_weight="50"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/pick_type_background"
+        android:orientation="vertical"
+        android:padding="6dp"
+        android:weightSum="2"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/pick_type_background_selector"
+            android:clickable="true"
+            android:onClick="showStandardPrices"
+            android:padding="30dp"
+            android:paddingLeft="20dp"
+            android:text="Standard Wrap 0.75&quot; Thick"
+            android:textColor="#585858"
+            android:textSize="20sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:background="#888888"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/pick_type_background_selector"
+            android:clickable="true"
+            android:onClick="showGalleryPrices"
+            android:padding="30dp"
+            android:paddingLeft="20dp"
+            android:gravity="center"
+            android:text="Gallery Wrap 1.5&quot; Thick"
+            android:textColor="#585858"
+            android:textSize="20sp" />
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

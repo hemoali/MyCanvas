@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="light_gray">#C0C0C0</drawable>
+    <drawable name="white">#ffffff</drawable>
+    <drawable name="very_light_gray">#F0F0F0</drawable>
+    <drawable name="moveOnBackground">#A6ffffff</drawable>
+    <drawable name="moveOnBackground_pressed">#D9ffffff</drawable>
+    <drawable name="transparent">#00ffffff</drawable>
+</resources>

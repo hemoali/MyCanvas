@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/home"
+                android:paddingBottom="50dp"
+                tools:context="graphagenic.com.mycanvas.ui.HomeActivity">
+
+
+    <TextView
+        android:id="@+id/moveon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/move_on_background"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="moveOn"
+        android:paddingBottom="7dp"
+        android:paddingTop="7dp"
+        android:text="Continue ►"
+        android:textColor="#0066FF"
+        android:textSize="30sp"/>
+</RelativeLayout>
